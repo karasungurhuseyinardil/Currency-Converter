@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+  <!-- Font Awesome icon library -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Main container for centering content -->
+  <div id="container">
+    <!-- Card-like wrapper for converter UI -->
+    <div id="main">
+      <!-- Header section with title -->
+      <div class="header-wrapper">
+        <h4>CURRENCY CONVERTER</h4>
+      </div>
+      <!-- Content area: inputs, selects, and result display -->
+      <div class="content-wrapper">
+        <!-- Input for the amount to convert -->
+        <input id="amount" type="number" placeholder="Amount"/>
+        <!-- Dropdown for source currency -->
+        <select id="firstCurrencyOption"></select>
+        <!-- Icon indicating conversion direction -->
+        <i class="fa-solid fa-arrow-right"></i>
+        <!-- Dropdown for target currency -->
+        <select id="secondCurrencyOption"></select>
+        <!-- Read-only field showing conversion result -->
+        <input id="result" type="number" readonly placeholder="Result"/>
+        <!-- Footer text or branding -->
+        <span>Currency Converter</span>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

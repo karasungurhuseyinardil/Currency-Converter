@@ -1,0 +1,66 @@
+/* style.css */
+
+/* ================= Container Settings ================= */
+/* The outermost container centers its contents vertically and horizontally */
+#container {
+  display: flex;                   /* use flexbox layout */
+  flex-direction: column;          /* stack children vertically */
+  align-items: center;             /* center children horizontally */
+}
+
+/* ================= Main Box (Card) ================= */
+/* #main serves as the central card holding all converter elements */
+#main {
+  display: flex;                   /* use flexbox layout */
+  flex-direction: column;          /* stack children vertically */
+  align-items: center;             /* center children horizontally */
+  width: 600px;                    /* fixed width for consistency */
+  padding: 10px;                   /* inner spacing */
+  border: 1px solid lightgrey;     /* light border for a card-like look */
+  border-radius: 5px;              /* slightly rounded corners */
+  background-color: antiquewhite;  /* soft background color */
+}
+
+/* ================= Header Section ================= */
+/* .header-wrapper contains the main title */
+.header-wrapper {
+  display: flex;                   /* use flexbox layout */
+  flex-direction: column;          /* stack children vertically */
+  align-items: center;             /* center heading horizontally */
+}
+
+.header-wrapper > h4 {
+  margin: 15px 0;                  /* top & bottom margin for spacing */
+  font-family: Arial, Helvetica, sans-serif;  /* fallback fonts */
+  font-size: 20px;                 /* font size for heading */
+}
+
+/* ================= Input & Select Fields ================= */
+/* All <input> fields share similar styling */
+input {
+  width: 120px;                    /* fixed width */
+  padding: 5px;                    /* inner padding */
+  margin: 0 10px;                  /* horizontal margin between fields */
+  border: 1px solid #ccc;          /* subtle border color */
+  border-radius: 3px;              /* small rounding */
+  font-size: 1rem;                 /* ensure readable font size */
+}
+
+/* All <select> dropdowns share similar styling */
+select {
+  padding: 5px;                    /* inner padding */
+  margin: 0 10px;                  /* horizontal margin between fields */
+  border: 1px solid #ccc;          /* subtle border color */
+  border-radius: 3px;              /* small rounding */
+  font-size: 1rem;                 /* readable font size */
+}
+
+/* ================= Footer / Label ================= */
+/* <span> at the bottom for additional info */
+span {
+  display: block;                  /* occupy full width */
+  text-align: center;              /* center the text */
+  margin-top: 20px;                /* spacing above */
+  color: #555;                     /* slightly muted text color */
+  font-size: 0.9rem;               /* smaller font size */
+}
